@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiChevronLeft } from "react-icons/fi";
+import { ChevronLeft } from "lucide-react"
 import "./FloatingMap.css";
 import IndiaMap from "./IndiaMap";
 
@@ -28,13 +29,16 @@ const FloatingMap = () => {
     return (
         <div
             className={`floating-window ${isOpen ? "open" : ""}`}
-            onClick={!isOpen ? openWindow : () => {}}
+            onClick={!isOpen ? openWindow : () => { }}
         >
             <div>
                 {isOpen ? (
                     <div className="flex">
-                        <button onClick={toggleWindow} className="back-button absolute top-[5%] left-[5%]">
-                            <FiChevronLeft />
+                        <button
+                            onClick={toggleWindow}
+                            className="fixed top-[5rem] left-[10rem] flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/90 hover:bg-slate-700 backdrop-blur-sm border border-slate-700 shadow-lg transition-all duration-200 hover:scale-105 group z-50"
+                        >
+                            <ChevronLeft className="w-6 h-6 text-slate-200 group-hover:text-white transition-colors" />
                         </button>
                         <div className="content flex">
                             <div className="w-1/2">
@@ -66,7 +70,7 @@ const FloatingMap = () => {
                                         className="w-full mt-1 px-3 text-black py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     />
                                 </div>
-                                <button className="w-full bg-blue-500 text-white py-2 rounded-md focus:outline-none hover:bg-blue-600">Predict</button>
+                                <button className="w-full bg-blue-500 text-white py-2 rounded-md focus:outline-none hover:bg-blue-600 predict-button">Predict</button>
                             </form>
                             <div className="mt-6">
                                 <h3 className="text-lg font-semibold text-gray-800">Energy Required:</h3>

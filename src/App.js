@@ -4,6 +4,8 @@ import HomePage from 'pages/HomePage';
 import FloatingMap from 'components/FloatingMap';
 import Admin from './Admin';
 import Protected from './Protected';
+import MarketplacePage from 'pages/MarketplacePage';
+import GenerateEnergyPage from 'pages/GenerateEnergyPage';
 
 function App() {
   return (
