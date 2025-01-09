@@ -149,7 +149,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 })}
               />
             </VuiBox>
-            <VuiBox color={light ? "white" : "inherit"}>
+            <VuiBox position="relative" zIndex="2" color={light ? "white" : "inherit"}>
               <Link to="/authentication/sign-in">
                 <IconButton sx={navbarIconButton} size="small">
                   <Icon

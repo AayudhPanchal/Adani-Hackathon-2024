@@ -2,11 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Admin from 'Admin';
 import HomePage from 'pages/HomePage';
+import FloatingMap from 'components/FloatingMap';
 import MarketplacePage from 'pages/MarketplacePage';
 
 function App() {
   return (
-    <Router>
+    <Router >
       <div>
         <Switch>
           <Route path='/authenticate-sign'></Route>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/dashboard" component={Admin} />
           <Route component={HomePage} /> 
         </Switch>
+        <FloatingMap />
       </div>
     </Router>
   );

@@ -45,6 +45,8 @@ export default styled(Button)(({ theme, ownerState }) => {
     }
 
     return {
+      position: 'relative',
+      zIndex:'2',
       background: backgroundValue,
       color: colorValue,
 

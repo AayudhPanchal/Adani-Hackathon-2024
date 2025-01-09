@@ -1,4 +1,5 @@
 // Images
+import zIndex from "@mui/material/styles/zIndex";
 import backgroundImage from "assets/images/sidenav/sidenav-card-background.png";
 
 function card(theme, ownerState) {
@@ -65,6 +66,7 @@ function cardContent(theme) {
 }
 
 const cardIconBox = {
+  zIndex: 2,
   display: "grid",
   placeItems: "center",
   transition: ({ transitions }) =>

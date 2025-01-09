@@ -127,6 +127,8 @@ function Sidenav({ color, brandName, routes, ...rest }) {
   return (
     <SidenavRoot {...rest} variant="permanent" ownerState={{ transparentSidenav, miniSidenav }}>
       <VuiBox
+        position="relative" 
+        zIndex="2"
         pt={3.5}
         pb={0.5}
         px={4}
