@@ -39,6 +39,7 @@ import { IoBuild } from "react-icons/io5";
 import { BsCreditCardFill } from "react-icons/bs";
 import { IoStatsChart } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
+import MarketplacePage from "pages/MarketplacePage";
 
 const routes = [
   {
@@ -96,13 +97,14 @@ const routes = [
     component: SignIn,
     noCollapse: true,
   },
+  
   {
     type: "collapse",
     name: "Sign Up",
     key: "sign-up",
-    route: "/authentication/sign-up",
+    route: "/marketplace",
     icon: <IoRocketSharp size="15px" color="inherit" />,
-    component: SignUp,
+    component: MarketplacePage,
     noCollapse: true,
   },
 ];
