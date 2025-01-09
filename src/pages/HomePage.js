@@ -1,26 +1,11 @@
-import React from 'react'
-import Header from './components/Header'
 import Hero from './components/Hero'
-import Features from './components/Features'
-import Benefits from './components/Benefits'
-import CTA from './components/CTA.js'
-import Footer from './components/Footer'
-import ParticleBackground from './components/ParticleBackground'
-
-function HomePage() {
+import Stats from './components/Stats'
+export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
-      <ParticleBackground />
-      <div className="relative z-10">
-        <Header />
-        <Hero />
-        <Features />
-        <Benefits />
-        <CTA />
-        <Footer />
-      </div>
-    </div>
+    <main className="min-h-screen bg-gradient-to-b from-[#050614] via-[#0A0B1E] to-[#141B36] text-white">
+      <div className="fixed inset-0 bg-repeat [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
+      <Hero />
+      <Stats />
+    </main>
   )
 }
-
-export default HomePage
