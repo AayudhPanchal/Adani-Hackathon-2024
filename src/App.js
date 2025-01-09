@@ -4,6 +4,7 @@ import Admin from 'Admin';
 import HomePage from 'pages/HomePage';
 import FloatingMap from 'components/FloatingMap';
 import MarketplacePage from 'pages/MarketplacePage';
+import GenerateEnergyPage from 'pages/GenerateEnergyPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Switch>
           <Route path='/authenticate-sign'></Route>
         <Route path="/marketplace" component={MarketplacePage} />
+        <Route path="/generated" component={GenerateEnergyPage} />
           <Route exact path="/" component={HomePage} />
           <Route path="/dashboard" component={Admin} />
           <Route component={HomePage} /> 

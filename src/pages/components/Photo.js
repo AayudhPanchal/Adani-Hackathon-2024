@@ -1,6 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
+import flashIcon from '../../assets/images/flash.svg';
 
 const Photo = () => {
     const ref = useRef(null)
@@ -52,9 +53,9 @@ const Photo = () => {
                     />
                 ))}
             </div>
-            
-            <div className="w-[200px] h-[200px] xl:h-[350px] xl:w-[398px] mix-blend-lighten absolute rounded-full">
-                <img alt="Spark" src={require('../../assets/images/flash.png')} />
+
+            <div className="w-[150px] h-[150px] xl:h-[350px] xl:w-[398px] mix-blend-lighten absolute rounded-full">
+                <img alt="Spark" src={flashIcon} />
             </div>
 
 
@@ -84,7 +85,7 @@ const Photo = () => {
                 />
             </motion.svg>
 
-            
+
         </div>
 
 
