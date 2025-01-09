@@ -1,9 +1,10 @@
 'use client'
 
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { ArrowRight, Zap, BarChart2, Wind, Waves } from 'lucide-react'
+import { Zap, BarChart2, Wind, Waves } from 'lucide-react'
 import Button from './Button'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Hero() {
   const ref = useRef(null)
@@ -88,10 +89,14 @@ export default function Hero() {
       <div className="flex flex-wrap gap-6 justify-center mb-20">
         
         <Button
+          
           size="lg"
           className="border-blue-400/50 text-blue-400 hover:bg-blue-400/10 rounded-full px-10 h-24 text-2xl"
         >
+          <Link to="/dashboard">
           Get Started
+          </Link>
+          
         </Button>
       </div>
 
