@@ -25,6 +25,7 @@
 		"ajv": "^8.17.1",
 		"apexcharts": "^3.30.0",
 		"chroma-js": "2.1.2",
+		"framer-motion": "^11.16.4",
 		"install": "^0.13.0",
 		"lucide-react": "^0.469.0",
 		"prop-types": "15.7.2",
@@ -42,6 +43,7 @@
 		"stylis": "4.0.10",
 		"stylis-plugin-rtl": "2.1.0",
 		"uuid": "8.3.2",
+		"vision-ui-dashboard-react": "file:",
 		"web-vitals": "1.0.1"
 	},
 	"devDependencies": {
