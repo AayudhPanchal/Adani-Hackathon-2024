@@ -25,7 +25,7 @@ function ReferralTracking() {
 					sx={{ width: '100%' }}
 					mb='40px'>
 					<VuiTypography variant='lg' color='white' mr='auto' fontWeight='bold'>
-						Referral Tracking
+						Goal Tracking
 					</VuiTypography>
 					<VuiBox
 						display='flex'
@@ -86,7 +86,7 @@ function ReferralTracking() {
 								Invited
 							</VuiTypography>
 							<VuiTypography color='white' variant='lg' fontWeight='bold'>
-								145 people
+								145
 							</VuiTypography>
 						</VuiBox>
 						<VuiBox
@@ -106,10 +106,10 @@ function ReferralTracking() {
 								}
 							})}>
 							<VuiTypography color='text' variant='button' fontWeight='regular' mb='5px'>
-								Bonus
+								Goal
 							</VuiTypography>
 							<VuiTypography color='white' variant='lg' fontWeight='bold'>
-								1,465
+								80 GWh
 							</VuiTypography>
 						</VuiBox>
 					</Stack>
@@ -133,7 +133,7 @@ function ReferralTracking() {
 							}}>
 							<VuiBox display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
 								<VuiTypography color='text' variant='button' mb='4px'>
-									Safety
+									Energy
 								</VuiTypography>
 								<VuiTypography
 									color='white'
@@ -145,10 +145,10 @@ function ReferralTracking() {
 											fontSize: '32px'
 										}
 									})}>
-									9.3
+									39.3
 								</VuiTypography>
 								<VuiTypography color='text' variant='button'>
-									Total Score
+									Conserved (GWh)
 								</VuiTypography>
 							</VuiBox>
 						</VuiBox>

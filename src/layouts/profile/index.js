@@ -83,26 +83,26 @@ function Overview() {
           >
             <ProfileInfoCard
               title="profile information"
-              description="Hi, I’m Mark Johnson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
+              description="Hi, I’m Saksham Gera, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
               info={{
-                fullName: "Mark Johnson",
+                fullName: "Saksham Gera",
                 mobile: "(44) 123 1234 123",
-                email: "mark@simmmple.com",
-                location: "United States",
+                email: "Saksham@gmail.com",
+                location: "India",
               }}
               social={[
                 {
-                  link: "https://www.facebook.com/CreativeTim/",
+                  link: "https://www.facebook.com/",
                   icon: <FacebookIcon />,
                   color: "facebook",
                 },
                 {
-                  link: "https://twitter.com/creativetim",
+                  link: "https://twitter.com/",
                   icon: <TwitterIcon />,
                   color: "twitter",
                 },
                 {
-                  link: "https://www.instagram.com/creativetimofficial/",
+                  link: "https://www.instagram.com/",
                   icon: <InstagramIcon />,
                   color: "instagram",
                 },

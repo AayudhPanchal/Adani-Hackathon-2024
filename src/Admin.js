@@ -31,6 +31,8 @@ import routes from "routes";
 
 // Vision UI Dashboard React contexts
 import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
+import SignIn from "layouts/authentication/sign-in";
+import SignUp from "layouts/authentication/sign-up";
 
 export default function Admin() {
   const [controller, dispatch] = useVisionUIController();
@@ -137,7 +139,8 @@ export default function Admin() {
         {layout === "vr" && <Configurator />}
         <Switch>
           {getRoutes(routes)}
-          <Redirect from="*" to="/dashboard" />
+          <Route path={'/authenticate/sign-in'} component={SignIn}/>
+          <Route path={'/authenticate/sign-up'} component={SignUp}/>
         </Switch>
       </ThemeProvider>
     </CacheProvider>
@@ -161,7 +164,8 @@ export default function Admin() {
       {layout === "vr" && <Configurator />}
       <Switch>
         {getRoutes(routes)}
-        <Redirect from="*" to="/dashboard" />
+        <Route path={'/authenticate/sign-in'} component={SignIn}/>
+        <Route path={'/authenticate/sign-up'} component={SignUp}/>
       </Switch>
     </ThemeProvider>
   );

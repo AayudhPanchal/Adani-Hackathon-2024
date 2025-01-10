@@ -21,7 +21,7 @@ function Footer() {
           sx={{ textAlign: "center", fontWeight: "400 !important" }}
           color="white"
         >
-          @ 2021, Made with ❤️&nbsp;&nbsp;&nbsp; by{" "}
+          @ 2025, Made with ❤️&nbsp;&nbsp;&nbsp; by{" "}
           <VuiTypography
             component="a"
             variant="button"
@@ -30,7 +30,7 @@ function Footer() {
             color="white"
             mr="2px"
           >
-            Simmmple
+            Team Spark
           </VuiTypography>
           &
           <VuiTypography
@@ -42,9 +42,9 @@ function Footer() {
             sx={{ textAlign: "center", fontWeight: "500 !important" }}
             color="white"
           >
-            Creative Tim
+            AIDMT
           </VuiTypography>
-          for a better web
+          for a better future
         </VuiTypography>
       </VuiBox>
       <VuiBox item xs={10}>
@@ -52,7 +52,7 @@ function Footer() {
           <VuiBox mr={{ xs: "20px", lg: "46px" }}>
             <VuiTypography
               component="a"
-              href="https://www.creative-tim.com/templates"
+              href="/marketplace"
               variant="body2"
               color="white"
             >
@@ -62,21 +62,11 @@ function Footer() {
           <VuiBox mr={{ xs: "20px", lg: "46px" }}>
             <VuiTypography
               component="a"
-              href="https://www.creative-tim.com/blog/"
+              href="https://facebook.com"
               variant="body2"
               color="white"
             >
               Blog
-            </VuiTypography>
-          </VuiBox>
-          <VuiBox>
-            <VuiTypography
-              component="a"
-              href="https://www.creative-tim.com/license"
-              variant="body2"
-              color="white"
-            >
-              License
             </VuiTypography>
           </VuiBox>
         </VuiBox>

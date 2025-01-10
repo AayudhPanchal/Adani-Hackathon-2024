@@ -13,15 +13,14 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          {/* <Protected> */}
-            <Route path="/dashboard" component={Admin} />
-            <Route path="/tables" component={Admin} />
-            <Route path="/billing" component={Admin} />
-            <Route path="/profile" component={Admin} />
-            <Route path="/marketplace" component={Admin} />
-          {/* </Protected> */}
-          <Route exact path="/authenticate/sign-in" component={Admin} />
-          <Redirect from="*" to="/dashboard" />
+          <Route path="/authenticate/sign-in" component={Admin} />
+          <Route path="/authenticate/sign-up" component={Admin} />
+          <Protected exact path="/dashboard" component={Admin} />
+          <Protected exact path="/tables" component={Admin} />
+          <Protected exact path="/billing" component={Admin} />
+          <Protected exact path="/profile" component={Admin} />
+          <Protected exact path="/marketplace" component={Admin} />
+          <Redirect from="*" to="/" />
         </Switch>
         <FloatingMap />
       </div>

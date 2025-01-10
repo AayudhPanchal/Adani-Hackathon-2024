@@ -56,7 +56,7 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's money", fontWeight: "regular" }}
+                title={{ text: "Today's Carbon Credits", fontWeight: "regular" }}
                 count="$53,000"
                 percentage={{ color: "success", text: "+55%" }}
                 icon={{ color: "info", component: <IoWallet size="22px" color="white" /> }}
@@ -64,7 +64,7 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's users" }}
+                title={{ text: "Today's Carbon Emission" }}
                 count="2,300"
                 percentage={{ color: "success", text: "+3%" }}
                 icon={{ color: "info", component: <IoGlobe size="22px" color="white" /> }}
@@ -72,7 +72,7 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "new clients" }}
+                title={{ text: "New Companies" }}
                 count="+3,462"
                 percentage={{ color: "error", text: "-2%" }}
                 icon={{ color: "info", component: <IoDocumentText size="22px" color="white" /> }}
@@ -80,7 +80,7 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "total sales" }}
+                title={{ text: "Total Carbon Credits" }}
                 count="$103,430"
                 percentage={{ color: "success", text: "+5%" }}
                 icon={{ color: "info", component: <FaShoppingCart size="20px" color="white" /> }}
@@ -107,13 +107,13 @@ function Dashboard() {
               <Card>
                 <VuiBox sx={{ height: "100%" }}>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
-                    Sales Overview
+                    Credits Overview
                   </VuiTypography>
                   <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
                       +5% more{" "}
                       <VuiTypography variant="button" color="text" fontWeight="regular">
-                        in 2021
+                        in 2025
                       </VuiTypography>
                     </VuiTypography>
                   </VuiBox>
@@ -141,10 +141,10 @@ function Dashboard() {
                       borderRadius: "20px",
                     }}
                   >
-                    <BarChart
+                    {/* <BarChart
                       barChartData={barChartDataDashboard}
                       barChartOptions={barChartOptionsDashboard}
-                    />
+                    /> */}
                   </VuiBox>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
                     Active Users

@@ -16,10 +16,10 @@ const SatisfactionRate = () => {
 		<Card sx={{ height: '340px' }}>
 			<VuiBox display='flex' flexDirection='column'>
 				<VuiTypography variant='lg' color='white' fontWeight='bold' mb='4px'>
-					Satisfaction Rate
+					Carbon Emission
 				</VuiTypography>
 				<VuiTypography variant='button' color='text' fontWeight='regular' mb='20px'>
-					From all projects
+					From all companies
 				</VuiTypography>
 				<VuiBox sx={{ alignSelf: 'center', justifySelf: 'center', zIndex: '-1' }}>
 					<VuiBox sx={{ position: 'relative', display: 'inline-flex' }}>

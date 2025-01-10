@@ -44,6 +44,8 @@ import {
 // Images
 import team2 from "assets/images/team-2.jpg";
 import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import { useAuth } from "useAuth";
+import { useHistory } from "react-router-dom";
 
 function DashboardNavbar({ absolute, light, isMini }) {
   const [navbarType, setNavbarType] = useState();
@@ -51,7 +53,8 @@ function DashboardNavbar({ absolute, light, isMini }) {
   const { miniSidenav, transparentNavbar, fixedNavbar, openConfigurator } = controller;
   const [openMenu, setOpenMenu] = useState(false);
   const route = useLocation().pathname.split("/").slice(1);
-
+  const { logout } = useAuth();
+  const history = useHistory();
   useEffect(() => {
     // Setting the navbar type
     if (fixedNavbar) {
@@ -150,24 +153,15 @@ function DashboardNavbar({ absolute, light, isMini }) {
               />
             </VuiBox>
             <VuiBox position="relative" zIndex="2" color={light ? "white" : "inherit"}>
-              <Link to="/authenticate/sign-in">
-                <IconButton sx={navbarIconButton} size="small">
-                  <Icon
-                    sx={({ palette: { dark, white } }) => ({
-                      color: light ? white.main : dark.main,
-                    })}
-                  >
-                    account_circle
-                  </Icon>
+                <IconButton onClick={() => {logout(); history.push("/")}} sx={navbarIconButton} size="small">
                   <VuiTypography
                     variant="button"
                     fontWeight="medium"
                     color={light ? "white" : "dark"}
                   >
-                    Sign in
+                    Sign Out
                   </VuiTypography>
                 </IconButton>
-              </Link>
               <IconButton
                 size="small"
                 color="inherit"

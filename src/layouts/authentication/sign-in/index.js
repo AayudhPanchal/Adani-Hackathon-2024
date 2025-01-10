@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 
 // react-router-dom components
@@ -20,14 +18,47 @@ import borders from "assets/theme/base/borders";
 
 // Authentication layout components
 import CoverLayout from "layouts/authentication/components/CoverLayout";
-
+import {useHistory} from 'react-router-dom';
 // Images
 import bgSignIn from "assets/images/signInImage.png";
+import { useAuth } from "useAuth";
 
 function SignIn() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(true);
-
+  const history = useHistory();
+  const {login , setIsAuthenticated} = useAuth();
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
+
+  const handleSignIn = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:2001/users/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
+      console.log(data.token);
+      if (response.ok) {
+        if(rememberMe) {
+          login(data.token)
+        } else {
+          setIsAuthenticated(true);
+        }
+        history.push("/dashboard");
+        console.log("Login successful:", data);
+      } else {
+        
+        console.error("Login failed:", data);
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+    }
+  };
 
   return (
     <CoverLayout
@@ -35,10 +66,10 @@ function SignIn() {
       color="white"
       description="Enter your email and password to sign in"
       premotto="INSPIRED BY THE FUTURE:"
-      motto="THE VISION UI DASHBOARD"
+      motto="FOR THE FUTURE."
       image={bgSignIn}
     >
-      <VuiBox component="form" role="form">
+      <VuiBox component="form" role="form" onSubmit={handleSignIn}>
         <VuiBox mb={2}>
           <VuiBox mb={1} ml={0.5}>
             <VuiTypography component="label" variant="button" color="white" fontWeight="medium">
@@ -55,7 +86,13 @@ function SignIn() {
               palette.gradients.borderLight.angle
             )}
           >
-            <VuiInput type="email" placeholder="Your email..." fontWeight="500" />
+            <VuiInput
+              type="email"
+              placeholder="Your email..."
+              fontWeight="500"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </GradientBorder>
         </VuiBox>
         <VuiBox mb={2}>
@@ -80,6 +117,8 @@ function SignIn() {
               sx={({ typography: { size } }) => ({
                 fontSize: size.sm,
               })}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </GradientBorder>
         </VuiBox>
@@ -96,7 +135,7 @@ function SignIn() {
           </VuiTypography>
         </VuiBox>
         <VuiBox mt={4} mb={1}>
-          <VuiButton color="info" fullWidth>
+          <VuiButton color="info" fullWidth type="submit">
             SIGN IN
           </VuiButton>
         </VuiBox>
@@ -105,7 +144,7 @@ function SignIn() {
             Don&apos;t have an account?{" "}
             <VuiTypography
               component={Link}
-              to="/authentication/sign-up"
+              to="/authenticate/sign-up"
               variant="button"
               color="white"
               fontWeight="medium"

@@ -2,13 +2,19 @@ import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { useAuth } from 'useAuth';
 
-function Protected({ children }) {
+function Protected({ component: Component, ...rest }) {
   const { isAuthenticated } = useAuth();
-
-  return isAuthenticated ? (
-    children
-  ) : (
-    <Redirect to="/authenticate/sign-in" />
+  return (
+    <Route
+      {...rest}
+      render={(props) =>
+        isAuthenticated ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to="/authenticate/sign-in" />
+        )
+      }
+    />
   );
 }
 

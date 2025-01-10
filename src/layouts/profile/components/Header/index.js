@@ -111,10 +111,10 @@ function Header() {
               })}
             >
               <VuiTypography variant="lg" color="white" fontWeight="bold">
-                Mark Johnson
+                Saksham Gera
               </VuiTypography>
               <VuiTypography variant="button" color="text" fontWeight="regular">
-                mark@simmmple.com
+                Saksham@gmail.com
               </VuiTypography>
             </VuiBox>
           </Grid>
