@@ -20,6 +20,8 @@ function App() {
           <Protected exact path="/billing" component={Admin} />
           <Protected exact path="/profile" component={Admin} />
           <Protected exact path="/marketplace" component={Admin} />
+          <Protected exact path="/blockchain" component={Admin} />
+          <Protected exact path="/generated" component={Admin} />
           <Redirect from="*" to="/" />
         </Switch>
         <FloatingMap />

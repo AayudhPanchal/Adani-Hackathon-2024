@@ -1,6 +1,6 @@
-# [Vision UI Free React](https://demos.creative-tim.com/vision-ui-dashboard-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/vision-ui-dashboard-react&text=Check%20Vision%20UI%20Dashboard%20made%20by%20@simmmple_web%20and%20@CreativeTim%20#webdesign%20#dashboard%20#react)
+# [Vision UI Free React](https://demos.creative-tim.com/Team-Spark) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/Team-Spark&text=Check%20Vision%20UI%20Dashboard%20made%20by%20@simmmple_web%20and%20@CreativeTim%20#webdesign%20#dashboard%20#react)
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vision-ui-dashboard-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/vision-ui-dashboard-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vision-ui-dashboard-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/vision-ui-dashboard-react/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/Team-Spark.svg?maxAge=2592000)](https://github.com/creativetimofficial/Team-Spark/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/Team-Spark.svg?maxAge=2592000)](https://github.com/creativetimofficial/Team-Spark/issues?q=is%3Aissue+is%3Aclosed)
 
 ![Product Gif](https://i.ibb.co/YjWPdyT/vision-ui-free-react.png)
 
@@ -27,11 +27,11 @@ You can read more about the <a href="https://www.creative-tim.com/learning-lab/r
 
 If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. Every page is spaced well, with attractive layouts and pleasing shapes. From specially designed dashboards for smart homes, virtual reality, and automotives to CRM admins, Vision UI Dashboard Free React has everything you need to quickly set up an amazing project.
 
-View <a href="https://demos.creative-tim.com/vision-ui-dashboard-react?ref=readme-vudreact" target="_blank">example pages here</a>.
+View <a href="https://demos.creative-tim.com/Team-Spark?ref=readme-vudreact" target="_blank">example pages here</a>.
 
 **HELPFUL LINKS**
 
-- View <a href="https://github.com/creativetimofficial/vision-ui-dashboard-react" target="_blank">Github Repository</a>
+- View <a href="https://github.com/creativetimofficial/Team-Spark" target="_blank">Github Repository</a>
 
 - Check <a href="https://www.creative-tim.com/knowledge-center?ref=readme-vudreact" target="_blank">FAQ Page</a>
 
@@ -49,7 +49,7 @@ Let us know your thoughts below. And good luck with development!
 
 ## Table of Contents
 
-- [Vision UI Dashboard Free React](https://demos.creative-tim.com/vision-ui-dashboard-react/?ref=readme-vudreact)
+- [Vision UI Dashboard Free React](https://demos.creative-tim.com/Team-Spark/?ref=readme-vudreact)
 - [Table of Contents](#table-of-contents)
 - [Versions](#versions)
 - [Demo](#demo)
@@ -66,27 +66,27 @@ Let us know your thoughts below. And good luck with development!
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vision-ui-dashboard-react?ref=readme-vudreact)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chakra-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vision-ui-dashboard-chakra?ref=readme-vudreact)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/Team-Spark?ref=readme-vudreact)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chakra-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vision-ui-dashboard-chakra?ref=readme-vudreact)
 
 | React | Chakra |
 | ]------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Vision UI Dashboard Free React](https://i.ibb.co/RYKtQ4M/vision-ui-free-react-ct.png)](https://www.creative-tim.com/product/vision-ui-dashboard-react?ref=readme-vudreact) | [![Vision UI Dashboard Free Chakra](https://i.ibb.co/kg5mNxm/vision-ui-free-chakra-ct.png)](https://www.creative-tim.com/product/vision-ui-dashboard-chakra?ref=readme-vudreact) |
+| [![Vision UI Dashboard Free React](https://i.ibb.co/RYKtQ4M/vision-ui-free-react-ct.png)](https://www.creative-tim.com/product/Team-Spark?ref=readme-vudreact) | [![Vision UI Dashboard Free Chakra](https://i.ibb.co/kg5mNxm/vision-ui-free-chakra-ct.png)](https://www.creative-tim.com/product/vision-ui-dashboard-chakra?ref=readme-vudreact) |
 
 ## Demo
 
-[View all Pages](https://demos.creative-tim.com/vision-ui-dashboard-react?ref=readme-vudreact).
+[View all Pages](https://demos.creative-tim.com/Team-Spark?ref=readme-vudreact).
 
 # Quick start
 
 Quick start options:
 
-- Buy from [Creative Tim](https://www.creative-tim.com/product/vision-ui-dashboard-react?ref=readme-vudreact).
+- Buy from [Creative Tim](https://www.creative-tim.com/product/Team-Spark?ref=readme-vudreact).
 
 ## Deploy
 
 :rocket: You can deploy your own version of the template to Genezio with one click:
 
-[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/vision-ui-dashboard-react&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/Team-Spark&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Preparation
 
@@ -378,18 +378,18 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Resources
 
-- [Live Preview](https://demos.creative-tim.com/vision-ui-dashboard-react?ref=readme-vudreact)
-- [Buy Page](https://www.creative-tim.com/product/vision-ui-dashboard-react?ref=readme-vudreact)
+- [Live Preview](https://demos.creative-tim.com/Team-Spark?ref=readme-vudreact)
+- [Buy Page](https://www.creative-tim.com/product/Team-Spark?ref=readme-vudreact)
 - License Agreement: <https://www.creative-tim.com/license?ref=readme-vudreact>
 - Documentation is [here](https://www.creative-tim.com/learning-lab/react/overview/vision-ui-dashboard/?ref=readme-vudreact)
 - [Support](https://www.creative-tim.com/contact-us?ref=readme-vudreact)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/vision-ui-dashboard-react/issues)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/Team-Spark/issues)
 
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Vision UI Dashboard. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Vision UI Dashbaord. Check the CHANGELOG from your dashboard on our [CHANGE LOG File](https://github.com/creativetimofficial/vision-ui-dashboard-react/blob/main/CHANGELOG.md?ref=readme-vudreact).
+1. Make sure that you are using the latest version of the Vision UI Dashbaord. Check the CHANGELOG from your dashboard on our [CHANGE LOG File](https://github.com/creativetimofficial/Team-Spark/blob/main/CHANGELOG.md?ref=readme-vudreact).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 

@@ -1,17 +1,17 @@
 {
-	"name": "vision-ui-dashboard-react",
+	"name": "Team-Spark",
 	"version": "3.0.0",
 	"private": true,
 	"author": "Creative Tim",
 	"license": "See license in https://www.creative-tim.com/license",
 	"description": "Material UI version of Vision UI Dashboard by Creative Tim",
-	"homepage": "https://demos.creative-tim.com/vision-ui-dashboard-react/#/dashboard",
+	"homepage": "https://demos.creative-tim.com/Team-Spark/#/dashboard",
 	"bugs": {
-		"url": "https://github.com/creativetimofficial/vision-ui-dashboard-react/issues"
+		"url": "https://github.com/creativetimofficial/Team-Spark/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/creativetimofficial/vision-ui-dashboard-react.git"
+		"url": "git+https://github.com/creativetimofficial/Team-Spark.git"
 	},
 	"dependencies": {
 		"@emotion/cache": "11.4.0",
@@ -25,6 +25,7 @@
 		"ajv": "^8.17.1",
 		"apexcharts": "^3.54.1",
 		"chroma-js": "2.1.2",
+		"ethers": "^6.13.5",
 		"framer-motion": "^11.16.4",
 		"install": "^0.13.0",
 		"lucide-react": "^0.469.0",
@@ -35,6 +36,7 @@
 		"react-dom": "^18.2.0",
 		"react-flatpickr": "3.10.7",
 		"react-github-btn": "1.2.1",
+		"react-graph-vis": "^1.0.7",
 		"react-icons": "^4.12.0",
 		"react-india-states-map": "^1.0.0",
 		"react-router-dom": "5.2.0",
@@ -43,8 +45,9 @@
 		"stylis": "4.0.10",
 		"stylis-plugin-rtl": "2.1.0",
 		"uuid": "8.3.2",
-		"vision-ui-dashboard-react": "file:",
-		"web-vitals": "1.0.1"
+		"Team-Spark": "file:",
+		"web-vitals": "1.0.1",
+		"xlsx": "^0.18.5"
 	},
 	"devDependencies": {
 		"@testing-library/jest-dom": "5.11.4",

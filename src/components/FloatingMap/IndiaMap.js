@@ -3,15 +3,23 @@ import India from "@svg-maps/india";
 import "react-svg-map/lib/index.css";
 import ReactDatamaps from "react-india-states-map";
 
-function IndiaMap({enabled = true}) {
+function IndiaMap({enabled = true, setStateName}) {
   const [stateCode, setStateCode] = useState("");
-  const [stateName, setStateName] = useState("");
 
   function onLocationClick(event) {
-    setStateCode(event.target.id);
-    setStateName(event.target.getAttribute("name"));
-    console.log("Id", event.target.id);
-    console.log("Name", event.target.getAttribute("name"));
+    // Ensure event and event.target are valid before accessing their properties
+    if (event && event.target) {
+      const id = event.target.id;
+      const name = event.target.getAttribute("name");
+      console.log(name);
+      setStateCode(id);
+      setStateName(name);
+
+      console.log("Id", id);
+      console.log("Name", name);
+    } else {
+      console.error("Invalid event target");
+    }
   }
 
   return (

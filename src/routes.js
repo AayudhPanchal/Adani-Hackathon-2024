@@ -18,6 +18,9 @@ import { IoStatsChart } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
 import MarketplacePage from "pages/MarketplacePage";
 import Admin from "Admin";
+import EthereumVis from "pages/EthereumVis";
+import { FaEthereum } from "react-icons/fa";
+import GenerateEnergyPage from "pages/GenerateEnergyPage";
 
 const routes = [
   {
@@ -36,6 +39,15 @@ const routes = [
     route: "/Marketplace",
     icon: <IoCash size="15px" color="inherit" />,
     component: MarketplacePage,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "GenerateEnergy",
+    key: "GenerateEnergy",
+    route: "/Generated",
+    icon: <IoCash size="15px" color="inherit" />,
+    component: GenerateEnergyPage,
     noCollapse: true,
   },
   {
@@ -64,6 +76,15 @@ const routes = [
     route: "/profile",
     icon: <BsFillPersonFill size="15px" color="inherit" />,
     component: Profile,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Blockchain",
+    key: "blockchain",
+    route: "/blockchain",
+    icon: <FaEthereum size="15px" color="inherit" />,
+    component: EthereumVis,
     noCollapse: true,
   }
 ];
