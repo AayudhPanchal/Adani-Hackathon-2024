@@ -394,7 +394,13 @@ const EthereumVis = () => {
     return (
         <DashboardLayout>
             <DashboardNavbar />
-            <div className=" p-7 gap-10 flex">
+            <div className=" p-7 m-3 gap-10 flex w-[90%] border border-gray-700 rounded-md">
+                <div className='flex flex-col'>
+                <div className="text-2xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500">
+                    
+                    <p>Decentralized Record Keeping </p>
+                    <p>Powered by Block-Chain</p>
+          </div>
                 <div className="w-96 p-4 rounded bg-black bg-opacity-50 border border-gray-700">
                     <div className="mb-4">
                         <h1 className="text-xl text-white font-bold">Power Plant & Consumer Registry</h1>
@@ -499,7 +505,7 @@ const EthereumVis = () => {
                         </form>
                     </div>
                 </div>
-
+                </div>
                 {/* Space for graph */}
                 <div className="flex-1">
                     <NetworkGraph
@@ -507,6 +513,7 @@ const EthereumVis = () => {
                         consumers={graphData.consumers}
                     />
                 </div>
+
             </div>
         </DashboardLayout>
     )
