@@ -3,12 +3,15 @@ import { ChevronLeft } from "lucide-react";
 import "./FloatingMap.css";
 import IndiaMap from "./IndiaMap";
 import * as XLSX from 'xlsx';
+
 const FloatingMap = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
     const [prediction, setPrediction] = useState(null);
     const [stateName, setStateName] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+
     const toggleWindow = () => {
         setIsOpen(!isOpen);
     };
@@ -22,7 +25,7 @@ const FloatingMap = () => {
         const workbook = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
         XLSX.writeFile(workbook, fileName);
-      };
+    };
 
     const handleDateChange = (e) => {
         const { name, value } = e.target;
@@ -40,11 +43,10 @@ const FloatingMap = () => {
             alert("Please select both start and end dates.");
             return;
         }
-        console.log(`${process.env.ML_BACKEND_URL}/predict/range`);
-        console.log(startDate);
-        console.log(endDate);
+        
+        setIsLoading(true); // Set loading to true
         try {
-            const response = await fetch(`http://127.0.0.1:5001/predict/range`, {
+            const response = await fetch(`${process.env.ML_BACKEND_URL}/predict/range`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -57,7 +59,6 @@ const FloatingMap = () => {
             
             if (response.ok) {
                 const data = await response.json();
-                console.log(data.predictions);
                 ExcelDownload(data.predictions);
             } else {
                 alert("Failed to fetch prediction. Please try again.");
@@ -65,6 +66,8 @@ const FloatingMap = () => {
         } catch (error) {
             console.error("Error:", error);
             alert("An error occurred while predicting.");
+        } finally {
+            setIsLoading(false); // Set loading to false
         }
     };
 
@@ -126,9 +129,12 @@ const FloatingMap = () => {
                                 </div>
                                 <button
                                     type="submit"
-                                    className="w-full bg-blue-500 text-white py-2 rounded-md focus:outline-none hover:bg-blue-600 predict-button"
+                                    className={`w-full py-2 rounded-md focus:outline-none text-white ${
+                                        isLoading ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-600"
+                                    }`}
+                                    disabled={isLoading}
                                 >
-                                    Predict & Download
+                                    {isLoading ? "Loading..." : "Predict & Download"}
                                 </button>
                             </form>
                             <div className="text-black">Selected State: {stateName}</div>
@@ -148,9 +154,7 @@ const FloatingMap = () => {
                                     </ul>
                                 </div>
                             )}
-                            
                         </div>
-
                     </div>
                 ) : (
                     <IndiaMap enabled={false} />
