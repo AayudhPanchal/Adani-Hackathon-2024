@@ -28,7 +28,6 @@ function SignUp() {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -45,6 +44,7 @@ function SignUp() {
         throw new Error("Failed to sign up");
       }
       const result = await response.json();
+      console.log(result.token);
       if(rememberMe) {
         login(result.token);
       } else {
