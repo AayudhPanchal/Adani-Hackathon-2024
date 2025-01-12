@@ -77,7 +77,7 @@ export default function Hero() {
           </motion.div>
 
           <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500">
-            B2B Energy Optimization Platform
+            SparkGrid
           </h1>
 
           <motion.p
