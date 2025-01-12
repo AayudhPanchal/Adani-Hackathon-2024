@@ -23,7 +23,7 @@ function SignUp() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const history = useHistory();
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
-  const {signup , setIsAuthenticated} = useAuth();
+  const {login , setIsAuthenticated} = useAuth();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -46,7 +46,7 @@ function SignUp() {
       }
       const result = await response.json();
       if(rememberMe) {
-        signup(result.token);
+        login(result.token);
       } else {
         setIsAuthenticated(true);
       }
